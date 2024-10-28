@@ -20,11 +20,6 @@
 	if(!.)
 		return lewd_is_hidden(target_human)
 
-/datum/sprite_accessory/xenohead/is_hidden(mob/living/carbon/human/target_human)
-	. = ..()
-	if(!.)
-		return lewd_is_hidden(target_human, hide_if_catsuit = FALSE, hide_if_sleeping_bag = FALSE)
-
 // Extends default proc check for hidden wings for supporting our sleepbag and catsuit too
 /datum/sprite_accessory/wings/is_hidden(mob/living/carbon/human/target_human)
 	. = ..()
